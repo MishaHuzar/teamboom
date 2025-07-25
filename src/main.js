@@ -1,1 +1,1 @@
-import "./js/modalsgi"
+import "./js/modals.js"
