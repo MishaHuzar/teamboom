@@ -40,11 +40,15 @@ padding-bottom: 24px;
 }
 
 .testimonials-item{
+    display: flex;
+flex-direction: column;
+
     border-radius: 24px;
 padding: 12px;
 min-width: 300px;
 
 background-color: #dfebeb;
+
 }
 
 .testimonials-text{
@@ -53,6 +57,10 @@ font-size: 22px;
 line-height: 1.6;
 text-align: center;
 color: #0d0b0a;
+}
+
+.testimonials-info-container{
+    margin-top: auto;
 }
 
 .testimonials-foto{
@@ -65,6 +73,7 @@ color: #0d0b0a;
 }
 
 .testimonials-name-container{
+    
     margin-top: 16px;
 }
 
@@ -78,6 +87,7 @@ color: #0d0b0a;
 }
 
 .testimonials-profession{
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -108,5 +118,10 @@ color: #0d0b0a;
 
 .testimonials-item{
  width: calc((100% - 24px) / 2);
+}
+
+.testimonials-profession{
+    font-family: "Sarabun", sans-serif;
+    line-height: 1.6;
 }
 }
