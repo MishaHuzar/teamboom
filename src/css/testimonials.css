@@ -1,9 +1,8 @@
-.testimonials{
-    background-color: #f2fafa;
-}
-
 .testimonials-container{
-    padding: 64px 32px;
+    padding: 64px 16px;
+    display: flex;
+flex-direction: column;
+gap: 24px;
 }
 
 .testimonials-title-container{
@@ -11,7 +10,7 @@
 align-items: center;
 justify-content: flex-start;
 flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .testimonials-title{
@@ -20,20 +19,20 @@ font-size: 52px;
 line-height: 1.2;
 letter-spacing: 0.01em;
 text-align: center;
-color: #0d0b0a;
+font-family: "Cabin", sans-serif;
 }
 .testimonials-title-text{
 font-weight: 400;
 font-size: 18px;
 line-height: 1.6;
 text-align: center;
-color: #0d0b0a;
 
 padding-top: 20px;
 padding-bottom: 24px;
 }
 
 .testimonials-list{
+    justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -45,7 +44,8 @@ flex-direction: column;
 
     border-radius: 24px;
 padding: 12px;
-min-width: 300px;
+max-width: 343px;
+gap: 32px;
 
 background-color: #dfebeb;
 
@@ -56,25 +56,20 @@ background-color: #dfebeb;
 font-size: 22px;
 line-height: 1.6;
 text-align: center;
-color: #0d0b0a;
 }
 
 .testimonials-info-container{
-    margin-top: auto;
+    display: flex;
+flex-direction: column;
+gap: 16px;
 }
 
 .testimonials-foto{
     display: block;
     margin: 0 auto;
-    margin-top: 32px ;
     border-radius: 100%;
 
     max-width: 100%;
-}
-
-.testimonials-name-container{
-    
-    margin-top: 16px;
 }
 
 
@@ -83,7 +78,6 @@ color: #0d0b0a;
 font-size: 18px;
 line-height: 1.6;
 text-align: center;
-color: #0d0b0a;
 }
 
 .testimonials-profession{
@@ -103,21 +97,27 @@ color: #0d0b0a;
     font-size: 40px;
 }
 
-.testimonials-title-text{
-    padding-top: 24px;
+.testimonials-title-container {
+gap: 24px;
 }
+
+.testimonials-item {
+max-width: 704px;
+}
+
 }
 
 @media screen and (min-width: 1336px){
 .testimonials-container{
-    padding: 112px 64px;
+    padding: 112px 12px;
 }
 .testimonials-title{
     font-size: 52px;
 }
 
 .testimonials-item{
- width: calc((100% - 24px) / 2);
+ max-width: 644px;
+justify-content: space-between;
 }
 
 .testimonials-profession{
