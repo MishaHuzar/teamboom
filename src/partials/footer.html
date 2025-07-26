@@ -11,19 +11,29 @@
         and events.
       </p>
       <form class="footer-form">
-        <input
-          class="footer-form-input"
-          type="email"
-          id="subscribe-email"
-          name="subscribe-email"
-          placeholder="E-mail"
-        />
-        <button class="footer-form-button" type="submit">Join</button>
+        <fieldset>
+          <div>
+            <input
+              class="footer-form-input"
+              type="email"
+              id="subscribe-email"
+              name="subscribe-email"
+              placeholder="E-mail"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <button class="footer-form-button" type="submit">Join</button>
+        </fieldset>
         <label class="footer-form-label" for="subscribe-email">
           By subscribing, you consent to our Privacy Policy and agree to receive
           updates.</label
         >
       </form>
+      <p class="footer-last-text-1336">
+        © 2025 Yoga Studio. All rights reserved.
+      </p>
     </div>
     <div class="footer-links">
       <nav class="footer-nav">
