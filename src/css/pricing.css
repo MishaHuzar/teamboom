@@ -78,6 +78,10 @@
     
 }
 
+p:last-child{
+    margin-bottom: 24px;
+}
+
 
 .plan-card,
 .plan-card-three {
@@ -159,6 +163,14 @@
   opacity: 0.5;
 }
 
+.btn-three {
+    display: none;
+}
+
+.pixel {
+margin-left: -3px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
@@ -190,7 +202,7 @@
         width: calc(50% - 12px);
         /* display: flex; */
         height: 383px;
-        
+        padding: 16px;
     }
 
     .title-top {
@@ -214,6 +226,7 @@
         font-size: 22px;
         line-height: 140%;
         letter-spacing: 1%;
+        margin-bottom: 8px;
     }
 
     .price {
@@ -234,6 +247,9 @@
     
     .plan-card-three {
         width: 704px;
+        height: 383px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .plan-card-three .join-btn {
@@ -270,6 +286,23 @@
    .plan-card:last-child {
     width: 704px;
    }
+
+   .last-list {
+    justify-content: center;
+    margin-left: 32px;
+    padding-top: 13px;
+    }
+
+   .join_btn { 
+     display: none;
+    }
+
+    
+
+
+    .btn-three {
+    display: block;
+}
     
 
     
@@ -282,6 +315,10 @@
 
 @media screen and (min-width:1158px) {
     
+
+    p:last-child {
+        margin-bottom: 0px;
+    }
     .pricing-section {
        /* width: 1440px; */
         /* padding: 60px 15px; */
@@ -367,21 +404,28 @@
         margin-bottom: 116px;
     }
 
+    
+
     .plan-card-three .plan-card-list {
         margin-bottom: 32px;
-        margin-top: 32px;
+        /* margin-top: 32px; */
     }
 
     .plan-card-three .join-btn {
         width: 100%;
     }
-
-    .join-btn {
-        
+    .btn-three {
+        display: none;
+    }
+    .join_btn {
+        display: block;
     }
 
     .icon-check {
        margin-right: 16px;
+    }
+    .last-list {
+        padding-top: 0px;
     }
 }
 
@@ -392,7 +436,7 @@
     }
 
         .plan-cards {
-        max-width: 1071px;
+        max-width: 1440px;
         height: 509px;
         flex-direction: row;
         gap: 24px;
@@ -400,4 +444,14 @@
         width: 100%;
         justify-content: center;
         }
+
+    .join_btn { 
+        display: block;
+    }
+
+    .btn-three {
+        display: none;
+}
+
+
 }
