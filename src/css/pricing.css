@@ -7,6 +7,7 @@
   vertical-align: middle;
   width: 24px;
   height: 24px;
+  margin-right: 16px;
 }
 
 /* 
@@ -27,14 +28,14 @@
     }
 }
 
-@media screen and (min-width:1158px) {
+/* @media screen and (min-width:1158px) {
     .pricing-container {
-        /* max-width: 1440px; */
+        max-width: 1440px;
         padding: 0 15px;
         margin: 0 auto;
 
     }
-}
+} */
 
 /* pricing section */
 .pricing-container { 
@@ -86,7 +87,7 @@
 }
 
 p:last-child{
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 }
 
 
@@ -174,6 +175,8 @@ p:last-child{
     display: none;
 }
 
+
+
 .pixel {
 margin-left: -3px;
 }
@@ -242,6 +245,7 @@ margin-left: -3px;
         line-height: 120%;
         letter-spacing: 1%;
         margin-bottom: 32px;
+        
     }
 
     .plan-card-list-item {
@@ -255,8 +259,11 @@ margin-left: -3px;
     .plan-card-three {
         width: 704px;
         height: 383px;
-        display: flex;
+        display: flex
+;
         flex-wrap: wrap;
+        align-items: baseline;
+        align-content: flex-end;
     }
 
     .plan-card-three .join-btn {
@@ -297,11 +304,13 @@ margin-left: -3px;
    .last-list {
     justify-content: center;
     margin-left: 32px;
-    padding-top: 13px;
+    /* padding-top: 13px; */
+    margin-top: 32px;
     }
 
    .join_btn { 
-     display: none;
+     /* display: none; */
+     
     }
 
     
@@ -317,22 +326,28 @@ margin-left: -3px;
 
 }
 
+@media  screen and (min-width:768px) and (max-width: 1157px) {
+    .plan-card-three .join-btn {
+        width: 320px;
+        position: relative;
+        bottom: 76px;
+    }
+}
+    
+
+
 
 
 
 @media screen and (min-width:1158px) {
     
 
-    p:last-child {
+    /* p:last-child {
         margin-bottom: 0px;
-    }
-    .pricing-section {
-       /* width: 1440px; */
-        /* padding: 60px 15px; */
-        margin: 0 auto;
-    }
+    } */
     
-    .container {
+    
+    .pricing-section {
         max-width: 1440px; 
         padding: 0 15px;
         margin: 0 auto;
