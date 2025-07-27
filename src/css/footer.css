@@ -247,7 +247,7 @@
 
 @media screen and (min-width: 1336px) {
   .footer {
-    padding: 64px;
+    padding: 64px 12px;
   }
 
   .footer-container {
