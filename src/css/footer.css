@@ -90,6 +90,7 @@
   font-size: 16px;
   line-height: 1.6;
   background-color: rgba(13, 11, 10, 0.05);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-button:hover {
@@ -182,7 +183,7 @@
     padding: 40px 32px;
   }
 
-  .footer > .container {
+  .footer-container {
     gap: 40px;
   }
 
@@ -240,7 +241,7 @@
     padding: 64px;
   }
 
-  .footer > .container {
+  .footer-container {
     padding: 48px;
   }
 
@@ -251,7 +252,7 @@
     width: 371px;
   }
 
-  .footer > .container {
+  .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
