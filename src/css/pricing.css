@@ -37,10 +37,21 @@
 }
 
 /* pricing section */
+.pricing-container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 .pricing-section {
     padding: 60px 0;
     background-color: #F9F9F9;
     color: #0D0B0A;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
     /* text-align: center; */
 }
 .title-top {
@@ -48,6 +59,7 @@
     font-size: 16px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 .title-one {
@@ -55,7 +67,7 @@
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    
+    margin-bottom: 20px;
 }
 
 .discription {
@@ -63,7 +75,7 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    
+    margin-bottom: 48px;
 }
 
 .plan-cards {
@@ -138,7 +150,7 @@
 .join-btn {
     font-family: "Sarabun", sans-serif;
     width: 100%;
-    height: 48px;
+    height: 46px;
     color: #0D0B0A;
     font-size: 16px;
     font-weight: 600;
@@ -169,7 +181,7 @@ margin-left: -3px;
 @media screen and (min-width: 768px) {
     .pricing-container {
         max-width: 768px;
-       
+        margin: 0 auto;
     }
     
     .pricing-section {
