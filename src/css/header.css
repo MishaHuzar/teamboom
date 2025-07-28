@@ -48,8 +48,6 @@
 
 .header-link-box {
     border-radius: 100px;
-    width: 74px;
-    height: 34px;
     text-align: center;
     background-color: #c2d9fc;
     border: 1px solid #c2d9fc;
@@ -70,11 +68,16 @@
 
 .join-link-mobile,
 .join-link-desktop {
-    margin: 0;
-    max-height: 100%;
-    font-size: 16px;
-    letter-spacing: 0.04em;
     box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    color: #0d0b0a;
+    width: 74px;
+    height: 34px;
+    padding: 4px 20px;
+    margin: 0;
 }
 
 .join-link-desktop {
@@ -85,13 +88,6 @@
     display: block;
 }
 
-.join-link-mobile,
-.join-link-desktop {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #0d0b0a;
-}
 
 @media screen and (min-width: 768px) {
     .header-container {
@@ -99,17 +95,18 @@
         gap: 32px;
     }
 
-    .header-link-box {
-        width: 105px;
-        height: 42px;
-    }
-
     .join-link-mobile {
         display: none;
     }
 
     .join-link-desktop {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        width: 105px;
+        height: 42px;
+        padding: 8px 20px;
     }
 
 }
@@ -228,8 +225,6 @@
 
 .navbar-link-box {
     border-radius: 100px;
-    width: 70px;
-    height: 34px;
     text-align: center;
     background-color: #c2d9fc;
     border: 1px solid #c2d9fc;
@@ -250,14 +245,17 @@
 
 .navbar-join-link-mobile,
 .navbar-join-link-desktop {
-    margin: 0;
     max-height: 100%;
-    letter-spacing: 0.04em;
     box-sizing: border-box;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    letter-spacing: 0.04em;
     color: #0d0b0a;
-    font-weight: 500;
+    width: 70px;
+    height: 34px;
+    padding: 4px 20px;
+    margin: 0;
 }
 
 .navbar-join-link-desktop {
@@ -291,7 +289,6 @@
 }
 
 .navbar-nav-link-bottom {
-    width: 100%;
     text-align: center;
     background-color: #c2d9fc;
     border: 1px solid #c2d9fc;
@@ -299,8 +296,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 100px;
-    width: 343px;
-    height: 46px;
+
     margin-top: auto;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -310,11 +306,23 @@
 .join-now-button-bottom {
     display: block;
     width: 100%;
+    max-width: 343px;
+    height: 46px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     color: #0d0b0a;
+    padding: 10px 24px;
 }
+
+.navbar-nav-link-bottom:hover,
+.navbar-nav-link-bottom:focus {
+    color: #0d0b0a;
+    background-color: #c2d9fc;
+    opacity: 0.5;
+}
+
+
 
 @media screen and (min-width: 768px) {
 
@@ -323,17 +331,18 @@
         padding: 0 32px 160px 32px;
     }
 
-    .navbar-link-box {
-        width: 105px;
-        height: 42px;
-    }
-
     .navbar-join-link-mobile {
         display: none;
     }
 
     .navbar-join-link-desktop {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        width: 105px;
+        height: 42px;
+        padding: 8px 20px;
     }
 
     .nav-link-tech-box {
