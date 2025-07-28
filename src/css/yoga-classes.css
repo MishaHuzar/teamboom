@@ -24,7 +24,6 @@
 }
 
 .section-head {
-  min-width: 320px;
   max-width: 343px;
 
   display: flex;
@@ -102,7 +101,6 @@
 .link-container {
   width: 100%;
   max-width: 343px;
-  min-width: 320px;
   min-height: 46px;
   padding: 10px 24px;
   flex-shrink: 1;
@@ -177,6 +175,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     column-gap: 24px;
     row-gap: 27px;
   }
@@ -255,6 +254,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     gap: 24px;
   }
 
