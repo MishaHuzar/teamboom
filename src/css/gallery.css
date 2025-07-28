@@ -1,59 +1,64 @@
-.gallery {
-    padding: 64px 20px;
+.gallery-container {
+  padding: 64px 20px;
+  padding: 64px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .gallery-title {
-font-family: "Cabin", sans-serif;
-font-weight: 400;
-font-size: 40px;
-line-height: 120%;
-letter-spacing: 0.01em;
-text-align: center;
-color: #0D0B0A;
-margin-bottom: 20px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 .gallery-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 160%;
-text-align: center;
-color: #0D0B0A;
-margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  margin: 0 auto;
 }
 .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .gallery-list-item {
-    width: calc((100% - 24px) / 2);
+  width: calc((100% - 24px) / 2);
 }
 .gallery-picture {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 @media screen and (min-width: 768px) {
-    .gallery {
+  .gallery-container {
     padding: 40px 32px;
-}
-    .gallery-title {
-margin-bottom: 0;
-}
-.gallery-text {
-    margin: 24px auto 80px;
-}
+    gap: 80px;
+  }
+  .gallery-header {
+    gap: 24px;
+  }
 }
 @media screen and (min-width: 1336px) {
-.gallery {
-    padding: 112px 64px;
-}
-.gallery-title {
-font-size: 52px;
-}
-.gallery-text {
-font-weight: 500;
-max-width: 768px;
-
-}
-.gallery-list-item {
+  .gallery-container {
+    padding: 112px 12px;
+  }
+  .gallery-title {
+    font-size: 52px;
+  }
+  .gallery-text {
+    font-weight: 500;
+    max-width: 768px;
+  }
+  .gallery-list-item {
     width: calc((100% - 48px) / 3);
-}
+  }
 }
