@@ -1,6 +1,13 @@
 /* Styles for Mobile devices */
-.container {
+html {
+  scroll-behavior: smooth;
+}
+
+section {
   min-width: 320px;
+}
+
+.container {
   max-width: 375px;
   margin: 0 auto;
 }

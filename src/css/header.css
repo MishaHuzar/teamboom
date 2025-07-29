@@ -1,5 +1,7 @@
 .page-header {
     padding: 14px 16px;
+    min-width: 320px;
+    align-items: center;
 }
 
 .header-container {
