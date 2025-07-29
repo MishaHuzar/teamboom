@@ -1,10 +1,8 @@
 .about-us {
   background: #dfebeb;
+  padding: 64px 16px;
 }
-.about-us-section {
-  padding-bottom: 64px;
-  padding-top: 64px;
-}
+
 .about-us-title {
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
@@ -89,11 +87,9 @@ p.about-us-text-list {
 @media only screen and (min-width: 768px) {
   .about-us {
     background: none;
+    padding: 40px 32px;
   }
-  .about-us-section {
-    padding-top: 80px;
-    padding-bottom: 40px;
-  }
+  
   .text-title-about-us {
     font-size: 18px;
   }
@@ -127,16 +123,17 @@ p.about-us-text-list {
 }
 
 @media only screen and (min-width: 1336px) {
+  .about-us {
+    padding: 112px 64px;
+  }
+  
   .about-us-title {
     font-size: 52px;
   }
   .about-us-title-list {
     font-size: 28px;
   }
-  .about-us-section {
-    padding-top: 112px;
-    padding-bottom: 112px;
-  }
+ 
   .about-us-list {
     display: flex;
     flex-wrap: nowrap;

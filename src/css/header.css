@@ -1,9 +1,12 @@
+.page-header {
+    padding: 14px 16px;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 16px;
-    min-height: 64px;
+    justify-content: space-between;
     gap: 16px;
 }
 
@@ -38,13 +41,11 @@
     align-items: center;
 }
 
-.left-header-box {
-    justify-content: flex-start;
+.right-header-box {
+    justify-content: end;
 }
 
-.right-header-box {
-    justify-content: flex-end;
-}
+
 
 .header-link-box {
     border-radius: 100px;
@@ -90,8 +91,12 @@
 
 
 @media screen and (min-width: 768px) {
-    .header-container {
+    .page-header {
         padding: 15px 32px;
+    }
+    
+    .header-container {
+        
         gap: 32px;
     }
 
@@ -116,8 +121,12 @@
         display: none;
     }
 
-    .header-container {
+    .page-header {
         padding: 15px 64px;
+    }
+
+    .header-container {
+        max-width: 1336px;
     }
 
     .header-nav-list {
