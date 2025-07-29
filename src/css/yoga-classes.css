@@ -9,11 +9,12 @@
 
 .yoga-classes {
   background-color: #dfebeb;
+  padding: 64px 16px;
 }
 
 .yoga-classes-section {
   max-width: 100%;
-  padding: 64px 16px;
+  
   color: #0d0b0a;
 
   display: flex;
@@ -146,11 +147,12 @@
 
   .yoga-classes {
     background-color: #f2fafa;
+    padding: 40px 32px;
   }
 
   .yoga-classes-section {
     max-width: 768px;
-    padding: 40px 32px;
+    
   }
 
   .section-head {
@@ -229,12 +231,12 @@
 
   .yoga-classes {
     background-color: transparent;
+    padding: 112px 64px;
   }
 
   .yoga-classes-section {
     max-width: 1336px;
-    padding: 112px 12px;
-    margin: o auto;
+    margin: 0 auto;
   }
 
   .section-head {

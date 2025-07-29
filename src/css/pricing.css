@@ -1,6 +1,9 @@
 
-.prising-container {
+.pricing-section {
     padding: 64px 16px;
+}
+
+.prising-container {
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -143,8 +146,12 @@
 .btn-three {display: none;}
 
 @media screen and (min-width: 768px) {
-    .pricing-container {
+    .pricing-section {
         padding: 40px 32px;
+    }
+    
+    .pricing-container {
+        
         gap: 24px;
     }
 
@@ -221,8 +228,12 @@
 }
 
 @media screen and (min-width: 1336px) {
+    .pricing-section {
+        padding: 112px 64px;
+    }
+    
     .pricing-container {
-        padding: 112px 12px;
+        
         gap: 40px;
     }
 

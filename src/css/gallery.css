@@ -1,6 +1,8 @@
+.gallery {
+  padding: 64px 20px;
+}
+
 .gallery-container {
-  padding: 64px 20px;
-  padding: 64px 20px;
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -39,8 +41,11 @@
   border-radius: 16px;
 }
 @media screen and (min-width: 768px) {
-  .gallery-container {
+  .gallery {
     padding: 40px 32px;
+  }
+  
+  .gallery-container {
     gap: 80px;
   }
   .gallery-header {
@@ -48,8 +53,9 @@
   }
 }
 @media screen and (min-width: 1336px) {
-  .gallery-container {
-    padding: 112px 12px;
+  
+  .gallery {
+    padding: 112px 64px;
   }
   .gallery-title {
     font-size: 52px;
